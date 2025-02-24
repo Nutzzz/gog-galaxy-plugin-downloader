@@ -6,25 +6,28 @@ plugins:
         guid: 'c2cd2e29-8b02-35a9-86fc-3faf90255857'
         url: 'https://github.com/Rall3n/galaxy-integration-amazon/releases/download/v${version}/windows.zip'
     battlenet:
-        default: true
+        # Currently broken
+        default: false
         version: '1.4.3'
         guid: 'ba170431-0649-482f-863b-d248592f1842'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-blizzard/releases/download/1.4.3/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-blizzard/releases/download/${version}/windows.zip'
     bethesda:
-        default: true
+        # Deprecated (store shutdown 11 May 2022)
+        default: false
         version: '1.0.2'
         guid: 'cb57391f-1675-35b1-05c0-896d43bdf4f8'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-bethesda/releases/download/1.0.2/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-bethesda/releases/download/${version}/windows.zip'
     discord:
         version: '0.1.1'
         guid: 'ce69028e-a7e4-462a-96d8-468259c298e2'
-        url: 'https://github.com/Ertego/gog-galaxy-discord/archive/8e568f94a419011076d22f723dffdbac8145c3fb.zip'
+        url: 'https://github.com/lele-blue/gog-galaxy-discord/archive/8e568f94a419011076d22f723dffdbac8145c3fb.zip'
         archive_path: 'gog-galaxy-discord-8e568f94a419011076d22f723dffdbac8145c3fb/'
     epic:
-        default: true
+        # Deprecated (now built-in)
+        default: false
         version: '0.49.1'
         guid: '24d5f405-7211-4198-83c4-50a6f63b1dcf'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-epic/releases/download/v0.49.1/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-epic/releases/download/v${version}/windows.zip'
     fanatical:
         version: '0.0.2'
         guid: 'f72d61b1-f2e2-4e46-98e0-c5f33cca34b8'
@@ -34,7 +37,7 @@ plugins:
         default: true
         version: '0.11.0'
         guid: 'f0ca3d80-a432-4d35-a9e3-60f27161ac3a'
-        url: 'https://github.com/UncleGoogle/galaxy-integration-humblebundle/releases/download/v0.11.0/humble_v0.11.0_win.zip'
+        url: 'https://github.com/UncleGoogle/galaxy-integration-humblebundle/releases/download/v${version}/humble_v${version}_win.zip'
     indiegala:
         version: '0.1.0'
         guid: 'a1a85742-f3e0-42ae-bde9-64ab7d0321cf'
@@ -42,23 +45,25 @@ plugins:
     itch:
         version: '0.4'
         guid: 'fd0effe6-77d9-42bc-999d-a5a5c870c2a4'
-        url: 'https://github.com/Ertego/gog-galaxy-itch.io/releases/download/0.0.4/itch_0_0_4.zip'
+        url: 'https://github.com/lele-blue/gog-galaxy-itch.io/releases/download/0.${version}/itch_0_0_4.zip'
         archive_path: 'itch/'
     origin:
+        # Switch to EA app (Origin will be shutdown 17 Apr 2025)
         default: true
-        version: '0.40'
+        version: '0.40' # really 0.44-pre
         guid: '7f53219b-4e2b-4591-9f4f-dfc5f4ba9eb0'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-origin/releases/download/v0.40/windows.zip'
+        url: 'https://github.com/BellezaEmporium/galaxy-integration-ead/archive/a56ddc225a9bd64483e8907eea39758078548baf.zip'
+        archive_path: 'galaxy-integration-ead-a56ddc225a9bd64483e8907eea39758078548baf/src/'
     paradox:
         default: true
         version: '0.6.2'
         guid: 'bfa5a6c9-r0c3-5g28-b921-f4cd75d4999a'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-paradox/releases/download/v0.6.2/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-paradox/releases/download/v${version}/windows.zip'
     psn:
         default: true
         version: '0.35'
         guid: '38087aea-3c30-439f-867d-ddf9fae8fe6f'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-psn/releases/download/v0.35/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-psn/releases/download/v${version}/windows.zip'
     riot:
         version: '0.2.5'
         guid: 'b4c0c2f5-23dc-4326-aa65-e9fabef61a3b'
@@ -71,7 +76,7 @@ plugins:
         archive_path: 'Rockstar/'
     steam:
         default: true
-        version: '1.0.7'
+        version: '1.0.8'
         guid: 'ca27391f-2675-49b1-92c0-896d43afa4f8'
         url: 'https://github.com/ABaumher/galaxy-integration-steam/releases/download/v${version}/windows.zip'
     twitch:
@@ -82,12 +87,12 @@ plugins:
         default: true
         version: '0.55.5'
         guid: 'afb5a69c-b2ee-4d58-b916-f4cd75d4999a'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-uplay/releases/download/v0.55.5/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-uplay/releases/download/v${version}/windows.zip'
     wargaming:
         default: true
         version: '0.9.8'
         guid: '91728e8a-33c3-4b6d-8382-4dd31043dec1'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-wargaming/releases/download/0.9.8/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-wargaming/releases/download/${version}/windows.zip'
     # Community, Games
     egg:
         # Osu! Plugin
@@ -95,30 +100,29 @@ plugins:
         guid: '79764115-b455-4ff0-be13-a316c7c53dec'
         url: 'https://github.com/UncleGoogle/galaxy-integration-osu/releases/download/v${version}/osu_v${version}_win.zip'
     ffxiv:
-        default: true
+        default: false
         version: '1.2.2'
         guid: '0a9eb0eb-812a-45a1-bc40-c1cd82195313'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-ffxiv/releases/download/1.2.2/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-ffxiv/releases/download/${version}/windows.zip'
     gw2:
-        default: true
+        default: false
         version: '0.5.2'
         guid: '637b1fd4-b1d0-4de8-9bf6-757e639807f3'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-gw2/releases/download/0.5.2/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-gw2/releases/download/${version}/windows.zip'
     kartridge:
-        version: '0.3.3'
+        version: '0.3.4'
         guid: '73d2c048-1ae7-46b2-ad4a-da16yc8ccecz'
-        url: 'https://github.com/pippo-san/galaxy-integration-legacy-games/releases/download/v${version}/legacygames.zip'
-        archive_path: 'legacygames/'
+        url: 'https://github.com/pippo-san/galaxy-integration-legacy-games/releases/download/v${version}/windows.zip'
     minecraft:
-        default: true
+        default: false
         version: '1.0.3'
         guid: 'cb57391f-1675-35b1-05c0-896d43bdf8f4'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-minecraft/releases/download/1.0.3/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-minecraft/releases/download/${version}/windows.zip'
     pathofexile:
-        default: true
+        default: false
         version: '0.4'
         guid: '52d06761-1c23-d725-9720-57ee0b8b14bc'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-pathofexile/releases/download/0.4/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-pathofexile/releases/download/${version}/windows.zip'
     test:
         # thcrap Plugin (Patching Touhou Project Games)
         version: '0.1'
@@ -130,7 +134,7 @@ plugins:
         version: '0.3'
         guid: 'c6596e5a-5f3a-4681-942a-746433f255ff'
         url: 'https://github.com/LeonardFiedrowicz/galaxy-integration-citra/archive/bac4637f426a3aa48bd8e51338ac219925629b60.zip'
-        archive_path: 'galaxy-integration-citra-bac4637f426a3aa48bd8e51338ac219925629b60'
+        archive_path: 'galaxy-integration-citra-bac4637f426a3aa48bd8e51338ac219925629b60/'
     amiga:
         # ScummVM Plugin
         version: '0.2'
@@ -168,16 +172,17 @@ plugins:
         url: 'https://github.com/JTNDev/galaxy-integration-gc/releases/download/v${version}/Dolphin-GCN-Retroarch-v${version}.zip'
         archive_path: 'dolphin_gc_6804a766-c1fd-48cf-9a8b-8661a970a6cb/'
     nswitch:
-        version: '2.0'
+        version: '0.1'
         guid: 'b627be67-44e5-40f5-a482-6e52bf967ea1'
-        url: 'https://github.com/hyoretsu/galaxy-integration-switch/releases/download/v2.0.0/galaxy-integration-switch.zip'
+        url: 'https://github.com/LeonardFiedrowicz/galaxy-integration-yuzu/archive/7dac7e388fabfb9da20a2eacd531c3b49a267d88.zip'
+        archive_path: 'galaxy-integration-yuzu-7dac7e388fabfb9da20a2eacd531c3b49a267d88/'
     nwii:
         version: '0.5.1'
         guid: 'fc3e85e4-c66b-4310-96c0-8f95cc43e546'
         url: 'https://github.com/JTNDev/galaxy-integration-wii/releases/download/${version}/galaxy-integration-wii.zip'
         archive_path: 'galaxy-integration-wii/'
     nwiiu:
-        version: '0.1'
+        version: '0.1' # really '1.2'
         guid: '1023214b-fd5d-45fd-9671-c080e92b03bb'
         url: 'https://github.com/LeonardFiedrowicz/galaxy-integration-cemu/releases/download/v1.2/galaxy-integration-cemu.zip'
         archive_path: 'galaxy-integration-cemu/'
@@ -190,7 +195,7 @@ plugins:
         version: '0.1.1'
         guid: 'cea94ced-c6cd-44cf-940c-a6c9253827a9'
         url: 'https://github.com/TBemme/galaxy-integration-psp/releases/download/v${version}/galaxy-integration-psp-${version}.zip'
-        archive_path: 'psp_cea94ced-c6cd-44cf-940c-a6c9253827a9'
+        archive_path: 'psp_cea94ced-c6cd-44cf-940c-a6c9253827a9/'
     ps2:
         version: '0.8.3'
         guid: '1e814707-1fe3-4e1e-86fe-1b8d1b7fac2e'
@@ -201,4 +206,4 @@ plugins:
         version: '0.63'
         guid: '80F9D16B-5D72-4B95-9D46-2A1EF417C1FC'
         url: 'https://github.com/mpm11011/galaxy-integration-rpcs3/archive/e18319c503dc9a97c315375b9570821ce5636544.zip'
-        archive_path: 'galaxy-integration-rpcs3-e18319c503dc9a97c315375b9570821ce5636544'
+        archive_path: 'galaxy-integration-rpcs3-e18319c503dc9a97c315375b9570821ce5636544/'
